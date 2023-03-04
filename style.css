@@ -14,6 +14,11 @@ a:hover {
 .clickable {
     cursor: pointer;
 }
+iframe {
+    width: 100%;
+    max-width: 700px;
+    max-height: 394px;
+}
 
 /* Header */
 .header {
@@ -35,8 +40,10 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0px;
 }
 nav a {
     text-decoration: none;
@@ -46,6 +53,20 @@ nav a {
     width: 70px;
     height: 22.42px;
     margin: 15px;
+}
+hr {
+    width: 100%;
+    border: 1px solid black;
+    opacity: .2;
+    display: none;
+}
+@media (max-width: 685px) {
+    .header-first-row {
+        justify-content: center;
+    }
+    hr {
+        display: inline;
+    }
 }
 /* --- Home page --- */
 /* Section header */
@@ -107,10 +128,6 @@ nav a {
     max-width: 400px;
     margin: 0 auto 32px;
 }
-.section-testimonials iframe {
-    width: 700px;
-    height: 394px;
-}
 /* Section boxes */
 .section-boxes {
     display: flex;
@@ -156,7 +173,7 @@ nav a {
 /* --- Detailed page --- */
 /* Detailed page header */
 .detailed-section-header {
-    padding: 0px 0px 40px;
+    padding: 0px 18px 40px;
     background-color: #F8F4F4;
     display: flex;
     flex-direction: column;
@@ -188,7 +205,7 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px 0px;
+    padding: 50px 18px;
 }
 .triangle {
     width: 42px;
@@ -205,11 +222,6 @@ nav a {
     max-width: 800px;
     margin: 0 auto 32px;
     text-align: left;
-}
-.section-detailed iframe {
-    width: 700px;
-    height: 394px;
-    margin: 10px 12px 58px;
 }
 .section-detailed-header {
     display: flex;
