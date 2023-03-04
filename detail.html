@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HTML Ironhack</title>
+    <title>BeBecado</title>
 </head>
 
 <body>
@@ -15,72 +15,232 @@
             <div>
                 <span>Logo / </span>
                 <!-- <img class="blackHeart" src="images/black-heart.png" alt="black heart" /> -->
-                <span><a href="/index.html">Detailed view</a></span>
+                <a href="/index.html"><span class="clickable">BeBecado</span></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/detail.html">¿Es esto para mí?</a></li>
-                    <li><a href="/detail.html">Preparación</a></li>
-                    <li><a href="/detail.html">Préstamos</a></li>
-                    <li><a href="/detail.html">Becas</a></li>
+                    <a href="/detail.html">
+                        <li class="clickable">¿Es esto para mí?</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Preparación</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Préstamos</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Becas</li>
+                    </a>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="section-1">
-            <h1>BeBecado</h1>
-            <article>La información que necesitas para acceder a las mejores universidades</article>
-            <div class="plan-buttons">
-                <button><a href="/detail.html">¿Es esto para mí?</a></button>
-                <button><a href="/detail.html">Preparación</a></button>
-                <button><a href="/detail.html">Préstamos</a></button>
-                <button><a href="/detail.html">Becas</a></button>
+        <section class="detailed-section-header">
+            <div class="detailed-section-header-content">
+                <h2>¿Es esto para mí?</h2>
+                <div class="sections">
+                    <article>
+                        Aquí tal vez podríamos poner un texto de introducción
+                        que tenga un par de líneas, esto hace de placeholder
+                    </article>
+                    <h3>Secciones</h3>
+                    <ul>
+                        <a href="#section1">
+                            <li>Qué esperar de esta guía</li>
+                        </a>
+                        <a href="#section2">
+                            <li>A quién está dirigido</li>
+                        </a>
+                        <a href="#section3">
+                            <li>Motivación</li>
+                        </a>
+                        <a href="#section4">
+                            <li>Estudios en universidades de élite en el extranjero</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section class="section-2">
-            <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
-            <h2>Nos lo cuenta x persona</h2>
+        <section class="section-detailed" id="section1">
+            <div class="section-detailed-header">
+                <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
+                <p>¿Es esto para mí?</p>
+            </div>
+            <h2>Qué esperar de esta guía</h2>
             <article>
-                X persona consiguió la beca x gracias a la fundación x y ahora trabaja en x empresa gracias al impulso
-                que x supuso para su carrera
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
             </article>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Vf-QutOY5Tc"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+
+                Etiam urna purus, fermentum nec erat vel, gravida dapibus purus. Nam bibendum bibendum blandit. Etiam
+                vestibulum dapibus augue eu varius. Curabitur sed metus vitae ipsum tincidunt consequat. Nunc tristique
+                mollis commodo. Vivamus sollicitudin purus in enim porttitor, bibendum bibendum diam efficitur.
+                Vestibulum nunc risus, elementum ac nunc vitae, tincidunt vulputate ante. In non magna mauris. Mauris
+                viverra ante eget consectetur suscipit. Suspendisse fringilla ante at lectus convallis iaculis. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus. Nunc vestibulum sodales lacus, at fermentum urna.
+                Duis sagittis, dolor sit amet tempor maximus, est libero condimentum augue, sed elementum sapien nisl at
+                odio. Nunc lobortis rutrum magna, vel convallis tellus vehicula vitae. Donec dictum ut risus sed
+                egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+            </article>
         </section>
-        <section class="section-3">
-            <div class="boxes">
-                <div class="box">
-                    <img src="images/zero-configuration.svg" alt="zero-configuration" class="box-img">
-                    <p class="box-title">¿Es esto para mí?</p>
-                    <p class="box-content">Es esto para mí Lorem Ipsum is simply dummy text of the printing and
-                        typesetting</p>
-                </div>
-                <div class="box">
-                    <img src="images/team-management.svg" alt="team-management" class="box-img">
-                    <p class="box-title">Preparación</p>
-                    <p class="box-content">
-                        Preparación Lorem Ipsum is simply dummy text of the printing and typesetting
-                    </p>
-                </div>
-                <div class="box">
-                    <img src="images/familiar-features.svg" alt="familiar-features" class="box-img">
-                    <p class="box-title">Préstamos</p>
-                    <p class="box-content">
-                        Préstamos Lorem Ipsum is simply dummy text of the printing and typesetting
-                    </p>
-                </div>
-                <div class="box">
-                    <img src="images/npm-audit.svg" alt="npm-audit" class="box-img">
-                    <p class="box-title">Becas</p>
-                    <p class="box-content">
-                        Becas Lorem Ipsum is simply dummy text of the printing and typesetting
-                    </p>
-                </div>
+        <section class="section-detailed" id="section2">
+            <div class="section-detailed-header">
+                <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
+                <p>¿Es esto para mí?</p>
             </div>
-            <button class="cta"><a href="/detail.html">Consigue tu beca</a></button>
+            <h2>A quién está dirigido</h2>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vf-QutOY5Tc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+
+                Etiam urna purus, fermentum nec erat vel, gravida dapibus purus. Nam bibendum bibendum blandit. Etiam
+                vestibulum dapibus augue eu varius. Curabitur sed metus vitae ipsum tincidunt consequat. Nunc tristique
+                mollis commodo. Vivamus sollicitudin purus in enim porttitor, bibendum bibendum diam efficitur.
+                Vestibulum nunc risus, elementum ac nunc vitae, tincidunt vulputate ante. In non magna mauris. Mauris
+                viverra ante eget consectetur suscipit. Suspendisse fringilla ante at lectus convallis iaculis. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus. Nunc vestibulum sodales lacus, at fermentum urna.
+                Duis sagittis, dolor sit amet tempor maximus, est libero condimentum augue, sed elementum sapien nisl at
+                odio. Nunc lobortis rutrum magna, vel convallis tellus vehicula vitae. Donec dictum ut risus sed
+                egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+            </article>
+        </section>
+        <section class="section-detailed" id="section3">
+            <div class="section-detailed-header">
+                <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
+                <p>¿Es esto para mí?</p>
+            </div>
+            <h2>Motivación</h2>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vf-QutOY5Tc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+
+                Etiam urna purus, fermentum nec erat vel, gravida dapibus purus. Nam bibendum bibendum blandit. Etiam
+                vestibulum dapibus augue eu varius. Curabitur sed metus vitae ipsum tincidunt consequat. Nunc tristique
+                mollis commodo. Vivamus sollicitudin purus in enim porttitor, bibendum bibendum diam efficitur.
+                Vestibulum nunc risus, elementum ac nunc vitae, tincidunt vulputate ante. In non magna mauris. Mauris
+                viverra ante eget consectetur suscipit. Suspendisse fringilla ante at lectus convallis iaculis. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus. Nunc vestibulum sodales lacus, at fermentum urna.
+                Duis sagittis, dolor sit amet tempor maximus, est libero condimentum augue, sed elementum sapien nisl at
+                odio. Nunc lobortis rutrum magna, vel convallis tellus vehicula vitae. Donec dictum ut risus sed
+                egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+            </article>
+        </section>
+        <section class="section-detailed" id="section4">
+            <div class="section-detailed-header">
+                <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
+                <p>¿Es esto para mí?</p>
+            </div>
+            <h2>Estudios en universidades de élite en el extranjero</h2>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vf-QutOY5Tc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut congue metus. Etiam at elementum velit.
+                Vivamus quis efficitur felis, a vehicula elit. Aliquam commodo, sapien ac ornare consectetur, arcu risus
+                aliquam dolor, eget blandit lectus sem quis nibh. Proin mollis, mi eu porta ultrices, risus purus
+                dapibus lacus, nec porta dui lectus at tortor. Donec sed metus sit amet turpis aliquam mollis id eget
+                odio. Sed efficitur mi eleifend leo porttitor luctus. Ut placerat, sapien et vestibulum maximus, ex ex
+                interdum ante, id hendrerit mauris sem id lectus. Nam in scelerisque nisi. Fusce rutrum, tortor sit amet
+                convallis iaculis, ante arcu aliquet turpis, sed hendrerit urna urna nec nunc. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eu erat magna. Suspendisse ut ex
+                metus. Nulla facilisis lacinia metus, eget ullamcorper enim vehicula ac. Praesent efficitur ornare
+                ipsum, eu pretium nisi varius vel. Curabitur tincidunt lacinia augue id condimentum.
+
+                Etiam urna purus, fermentum nec erat vel, gravida dapibus purus. Nam bibendum bibendum blandit. Etiam
+                vestibulum dapibus augue eu varius. Curabitur sed metus vitae ipsum tincidunt consequat. Nunc tristique
+                mollis commodo. Vivamus sollicitudin purus in enim porttitor, bibendum bibendum diam efficitur.
+                Vestibulum nunc risus, elementum ac nunc vitae, tincidunt vulputate ante. In non magna mauris. Mauris
+                viverra ante eget consectetur suscipit. Suspendisse fringilla ante at lectus convallis iaculis. Interdum
+                et malesuada fames ac ante ipsum primis in faucibus. Nunc vestibulum sodales lacus, at fermentum urna.
+                Duis sagittis, dolor sit amet tempor maximus, est libero condimentum augue, sed elementum sapien nisl at
+                odio. Nunc lobortis rutrum magna, vel convallis tellus vehicula vitae. Donec dictum ut risus sed
+                egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+            </article>
         </section>
     </main>
 </body>

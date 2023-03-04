@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HTML Ironhack</title>
+    <title>BeBecado</title>
 </head>
 
 <body>
@@ -15,30 +15,38 @@
             <div>
                 <span>Logo / </span>
                 <!-- <img class="blackHeart" src="images/black-heart.png" alt="black heart" /> -->
-                <span><a href="/index.html">BeBecado</a></span>
+                <a href="/index.html"><span class="clickable">BeBecado</span></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/detail.html">¿Es esto para mí?</a></li>
-                    <li><a href="/detail.html">Preparación</a></li>
-                    <li><a href="/detail.html">Préstamos</a></li>
-                    <li><a href="/detail.html">Becas</a></li>
+                    <a href="/detail.html">
+                        <li class="clickable">¿Es esto para mí?</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Preparación</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Préstamos</li>
+                    </a>
+                    <a href="/detail.html">
+                        <li class="clickable">Becas</li>
+                    </a>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="section-1">
+        <section class="section-home-header">
             <h1>BeBecado</h1>
             <article>La información que necesitas para acceder a las mejores universidades</article>
-            <div class="plan-buttons">
-                <button><a href="/detail.html">¿Es esto para mí?</a></button>
-                <button><a href="/detail.html">Preparación</a></button>
-                <button><a href="/detail.html">Préstamos</a></button>
-                <button><a href="/detail.html">Becas</a></button>
+            <div class="pages-buttons">
+                <a href="/detail.html"><button>¿Es esto para mí?</button></a>
+                <a href="/detail.html"><button>Preparación</button></a>
+                <a href="/detail.html"><button>Préstamos</button></a>
+                <a href="/detail.html"><button>Becas</button></a>
             </div>
         </section>
-        <section class="section-2">
+        <section class="section-testimonials">
             <img src="images/triangle-hexagon.svg" alt="triangle" class="triangle">
             <h2>Nos lo cuenta x persona</h2>
             <article>
@@ -50,7 +58,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </section>
-        <section class="section-3">
+        <section class="section-boxes">
             <div class="boxes">
                 <div class="box">
                     <img src="images/zero-configuration.svg" alt="zero-configuration" class="box-img">
@@ -80,7 +88,7 @@
                     </p>
                 </div>
             </div>
-            <button class="cta"><a href="/detail.html">Consigue tu beca</a></button>
+            <a href="/detail.html"><button class="cta clickable">Consigue tu beca</button></a>
         </section>
     </main>
 </body>

@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
     font-family: 'Poppins';
     max-width: 1472px;
     margin: auto;
 }
-
 a {
     all: unset;
 }
+a:hover {
+    cursor: pointer;
+}
+.clickable {
+    cursor: pointer;
+}
 
 /* Header */
-
 .header {
     font-size: 14px;
 }
@@ -24,42 +29,28 @@ a {
     font-weight: 600;
     padding: 10px 25px;
 }
-
 nav {
     width: 500px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a {
     text-decoration: none;
     color: black;
 }
-
 .logo {
     width: 70px;
     height: 22.42px;
     margin: 15px;
 }
-
-.lupa {
-    width: 25px;
-    margin-left: 20px;
-    opacity: 70%;
-}
-
-.blackHeart {
-    width: 35px;
-    margin-right: 1rem;
-}
-/* Sections */
-.section-1 {
-   padding: 0px 0px 40px;
+/* --- Home page --- */
+/* Section header */
+.section-home-header {
+    padding: 0px 0px 40px;
     background-color: #F8F4F4;
     display: flex;
     flex-direction: column;
@@ -67,16 +58,15 @@ nav a {
     justify-content: flex-start;
     text-align: center;
 }
-
-.section-1 h1 {
+.section-home-header h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 32px;
 }
-.plan-buttons {
+.pages-buttons {
     margin-top: 12px;
 }
-.plan-buttons button {
+.pages-buttons button {
     font-size: 14px;
     color: #000000;
     background-color: white;
@@ -87,50 +77,53 @@ nav a {
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
     font-weight: 800;
 }
-.plan-buttons button:hover {
+.pages-buttons button:hover {
     font-size: 14px;
     color: white;
     background-color: #FB3B49;
+    box-shadow: 4px 4px 4px #fb3b4980;
     cursor: pointer;
+
 }
-.section-2 {
+/* Section testimonials */
+.section-testimonials {
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 50px 0px;
 }
 .triangle {
-    width: 120px;
+    width: 30px;
     margin: 0px 0px 50px;
 }
-
-.section-2 h2 {
+.section-testimonials h2 {
     font-style: italic;
     transform: skew(9deg, 0deg);
     background-color: rgba(255, 204, 53, .4);
-    max-width: 800px;;
+    max-width: 800px;
     margin: 0px auto 30px;
 }
-
-.section-2 article {
+.section-testimonials article {
     max-width: 400px;
     margin: 0 auto 32px;
 }
-
-.section-3 {
+.section-testimonials iframe {
+    width: 700px;
+    height: 394px;
+}
+/* Section boxes */
+.section-boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .boxes {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
-
 .box {
     width: 250px;
     margin: 25px 35px;
@@ -139,7 +132,6 @@ nav a {
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 .box-title {
     color: rgb(255, 98, 71);
     font-weight: bold;
@@ -147,22 +139,84 @@ nav a {
 .box-img {
     height: 40px;
 }
-
-.section-3 button {
+.section-boxes button {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     color: white;
 }
-
-.section-3 h2 {
+.section-boxes h2 {
     color: #ED1C24;
 }
-.section-3 button {
+.section-boxes button {
     margin: 40px 0px 100px;
     width: 275px;
     height: 40px;
     background-color: #000000;
     font-weight: 800;
 }
-.cta:hover {
-    cursor: pointer;
+/* --- Detailed page --- */
+/* Detailed page header */
+.detailed-section-header {
+    padding: 0px 0px 40px;
+    background-color: #F8F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.detailed-section-header-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.sections {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.sections a:hover {
+    font-weight: bold;
+}
+
+.sections h3 {
+    margin-bottom: -10px;
+}
+/* Detailed page content */
+.section-detailed {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+.triangle {
+    width: 42px;
+    margin: 0px 0px 14px;
+}
+.section-detailed h2 {
+    font-style: italic;
+    transform: skew(9deg, 0deg);
+    background-color: rgba(255, 204, 53, .4);
+    max-width: 800px;
+    margin: 0px auto 30px;
+}
+.section-detailed article {
+    max-width: 800px;
+    margin: 0 auto 32px;
+    text-align: left;
+}
+.section-detailed iframe {
+    width: 700px;
+    height: 394px;
+    margin: 10px 12px 58px;
+}
+.section-detailed-header {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.section-detailed-header p {
+    margin-left: 8px;
 }
