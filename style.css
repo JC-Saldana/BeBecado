@@ -303,8 +303,8 @@ hr {
 }
 
 @media (max-width: 780px) {
-    .section-home-header {
-        padding: 12px 12px;
+    section {
+        padding: 12px 12px !important;
     }
     .section-home-header h1 {
         margin-top: 12px;
