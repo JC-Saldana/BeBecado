@@ -1,19 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+:root {
+    --light-green: #606C38;
+    --dark-green: #283618;
+    --cream: #FEFAE0;
+    --light-orange: #dfa96b;
+    --dark-orange: #BC6C25;
+}
+
+html {
+    background-color: var(--cream);
+}
+
+main {
+    padding-top: 84px;
+}
+
 body {
     font-family: 'Poppins';
     max-width: 1472px;
     margin: auto;
 }
+
 a {
     all: unset;
 }
+
 a:hover {
     cursor: pointer;
 }
+
 .clickable {
     cursor: pointer;
 }
+
 iframe {
     width: 100%;
     max-width: 700px;
@@ -21,22 +41,28 @@ iframe {
 }
 
 /* Header */
-.header {
-    font-size: 14px;
+header {
+    position: fixed;
+    width: 100vw;
+    height: 88px;
+    background-color: var(--cream);
+    z-index: 1;
 }
 
 .header-first-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    border-bottom: 1px solid lightgray;
+   
+    box-shadow: 0px 0px 10px #464646;
     font-weight: 600;
-    padding: 10px 25px;
+    padding: 0px 48px;
 }
+
 nav {
     width: 500px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -45,67 +71,86 @@ nav ul {
     align-items: center;
     padding: 0px;
 }
+
 nav a {
     text-decoration: none;
     color: black;
 }
+
 .logo {
-    width: 70px;
-    height: 22.42px;
+    width: 78px;
     margin: 15px;
 }
+
 hr {
     width: 100%;
     border: 1px solid black;
     opacity: .2;
     display: none;
 }
-@media (max-width: 685px) {
+
+@media (max-width: 780px) {
     .header-first-row {
         justify-content: center;
+        padding: 4px 12px;
+        font-size: 14px;
     }
-    hr {
-        display: inline;
+    nav ul {
+        justify-content: space-around;
+    }
+    header {
+        height: 96px;
+    }
+    main {
+        padding-top: 96px;
     }
 }
+
 /* --- Home page --- */
 /* Section header */
 .section-home-header {
     padding: 0px 0px 40px;
-    background-color: #F8F4F4;
+    background-color: var(--light-orange);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
 }
+
 .section-home-header h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 32px;
 }
+
 .pages-buttons {
     margin-top: 12px;
 }
+
 .pages-buttons button {
-    font-size: 14px;
+    font-size: 16px;
     color: #000000;
-    background-color: white;
-    width: 175px;
-    height: 45px;
+    background-color: #fff;
+    width: 204px;
+    height: 48px;
     border: none;
     margin: 12px;
-    box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
+    box-shadow: 8px 8px 0 var(--dark-orange);
     font-weight: 800;
-}
-.pages-buttons button:hover {
-    font-size: 14px;
-    color: white;
-    background-color: #FB3B49;
-    box-shadow: 4px 4px 4px #fb3b4980;
-    cursor: pointer;
 
 }
+
+.pages-buttons button:hover {
+    font-size: 14px;
+    background-color: var(--cream);
+    box-shadow: 4px 4px 4px var(--dark-orange);
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 /* Section testimonials */
 .section-testimonials {
     align-items: center;
@@ -113,10 +158,12 @@ hr {
     text-align: center;
     padding: 50px 0px;
 }
+
 .triangle {
     width: 30px;
     margin: 0px 0px 50px;
 }
+
 .section-testimonials h2 {
     font-style: italic;
     transform: skew(9deg, 0deg);
@@ -124,10 +171,12 @@ hr {
     max-width: 800px;
     margin: 0px auto 30px;
 }
+
 .section-testimonials article {
     max-width: 400px;
     margin: 0 auto 32px;
 }
+
 /* Section boxes */
 .section-boxes {
     display: flex;
@@ -135,12 +184,14 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
 .boxes {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .box {
     width: 250px;
     margin: 25px 35px;
@@ -149,20 +200,25 @@ hr {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 .box-title {
     color: rgb(255, 98, 71);
     font-weight: bold;
 }
+
 .box-img {
     height: 40px;
 }
+
 .section-boxes button {
     box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
     color: white;
 }
+
 .section-boxes h2 {
     color: #ED1C24;
 }
+
 .section-boxes button {
     margin: 40px 0px 100px;
     width: 275px;
@@ -170,16 +226,22 @@ hr {
     background-color: #000000;
     font-weight: 800;
 }
+
 /* --- Detailed page --- */
 /* Detailed page header */
 .detailed-section-header {
-    padding: 0px 18px 40px;
-    background-color: #F8F4F4;
+    padding: 8px 18px 40px;
+    background-color: var(--light-orange);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+}
+
+.detailed-section-header h2 {
+    font-size: 38px;
+    font-weight: 800;
 }
 
 .detailed-section-header-content {
@@ -193,6 +255,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
 .sections a:hover {
     font-weight: bold;
 }
@@ -200,6 +263,7 @@ hr {
 .sections h3 {
     margin-bottom: -10px;
 }
+
 /* Detailed page content */
 .section-detailed {
     align-items: center;
@@ -207,10 +271,12 @@ hr {
     text-align: center;
     padding: 50px 18px;
 }
+
 .triangle {
     width: 42px;
     margin: 0px 0px 14px;
 }
+
 .section-detailed h2 {
     font-style: italic;
     transform: skew(9deg, 0deg);
@@ -218,27 +284,39 @@ hr {
     max-width: 800px;
     margin: 0px auto 30px;
 }
+
 .section-detailed article {
     max-width: 800px;
     margin: 0 auto 32px;
     text-align: left;
 }
+
 .section-detailed-header {
     display: flex;
     width: 100%;
     max-width: 800px;
     margin: auto;
 }
+
 .section-detailed-header p {
     margin-left: 8px;
 }
 
+@media (max-width: 780px) {
+    .section-home-header {
+        padding: 12px 12px;
+    }
+    .section-home-header h1 {
+        margin-top: 12px;
+    }
+}
 
 /* ----- ANIMATIONS ------ */
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 /* ----------------------------------------------
  * Generated by Animista on 2023-3-4 17:20:46
  * Licensed under FreeBSD License.
@@ -251,28 +329,94 @@ hr {
  * animation tracking-in-expand
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-expand {
+@-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
+}
+
+@keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}
+
+/* hover-underline-animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-4-19 13:29:16
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-down-center
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
