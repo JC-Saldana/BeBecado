@@ -3,7 +3,7 @@
 :root {
     --light-green: #606C38;
     --dark-green: #283618;
-    --cream: #FEFAE0;
+    --cream: #fffce9;
     --light-orange: #dfa96b;
     --dark-orange: #BC6C25;
 }
@@ -42,22 +42,23 @@ iframe {
 
 /* Header */
 header {
-    position: fixed;
-    width: 100vw;
-    height: 88px;
     background-color: var(--cream);
+    position: fixed;
+    width: 100%;
+    max-width: 1472px;
     z-index: 1;
+    height: 90px;
 }
-
 .header-first-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     box-shadow: 0px 0px 10px #464646;
     font-weight: 600;
     padding: 0px 48px;
-}
+    margin: 12px 12px 0px;
+    height: 78px;
+} 
 
 nav {
     width: 500px;
@@ -94,12 +95,13 @@ hr {
         justify-content: center;
         padding: 4px 12px;
         font-size: 14px;
+        height: 68px;
     }
     nav ul {
         justify-content: space-around;
     }
     header {
-        height: 96px;
+        height: 88px;
     }
     main {
         padding-top: 96px;
@@ -293,7 +295,7 @@ hr {
 
 .section-detailed-header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     max-width: 800px;
     margin: auto;
 }
